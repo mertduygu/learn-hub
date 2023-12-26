@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import UserLayout from "../layout/user-layout";
 import HomePage from "../pages/home-page";
 import CoursesPage from "../pages/courses-page";
@@ -34,3 +34,11 @@ const router = createBrowserRouter([
     ],
   },
 ]);
+
+const AppRouter = () => {
+  return (
+    <RouterProvider router={router}/>
+  )
+}
+
+export default AppRouter
