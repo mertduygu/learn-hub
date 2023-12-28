@@ -1,25 +1,33 @@
-import React from 'react'
-import { Nav } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import {
+  AiOutlineAliwangwang,
+  AiOutlineHome,
+  AiFillForward,
+  AiOutlineCalendar,
+  AiOutlineInfoCircle,
+} from "react-icons/ai";
+
 
 const MainMenu = (props) => {
   return (
     <>
                  <Nav {...props}>                 
                  <Nav.Link as={Link} to="/">
-                    Home
+                    <AiOutlineHome/>Home
                     </Nav.Link>
                   <Nav.Link as={Link} to="/courses">
-                    Courses
+                    <AiFillForward/>Courses
                     </Nav.Link>
                   <Nav.Link as={Link} to="/events">
-                    Events
+                    <AiOutlineCalendar/>Events
                     </Nav.Link>
                   <Nav.Link as={Link} to="/about">
-                    About
+                    <AiOutlineInfoCircle/>About
                     </Nav.Link>
                   <Nav.Link as={Link} to="/contact">
-                    Contact
+                    <AiOutlineAliwangwang/>Contact
                     </Nav.Link>
                     </Nav>
     </>

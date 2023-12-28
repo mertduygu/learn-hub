@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { config } from "../../helpers/config";
 import MainMenu from "./main-menu";
 import "./footer.scss";
+import SocialMenu from "./social-menu";
+import ContactMenu from "./contact-menu";
 const Footer = () => {
   return (
     <footer>
@@ -20,12 +22,16 @@ const Footer = () => {
           </Col>
           <Col>
             <h3>Quick Links</h3>
-
             <MainMenu className="flex-column" />
-
           </Col>
-          <Col></Col>
-          <Col></Col>
+          <Col>
+          <h3>Social Links</h3>
+          <SocialMenu className="flex-column"/>
+          </Col>
+          <Col>
+          <h3>Contact Us</h3>
+          <ContactMenu className="flex-column"/>
+          </Col>
         </Row>
       </Container>
     </footer>

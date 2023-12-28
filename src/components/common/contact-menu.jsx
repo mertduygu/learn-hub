@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { config } from '../../helpers/config';
 import { FaFacebook, FaTwitter, FaLinkedin,FaInstagram,FaYoutube, FaGithub } from "react-icons/fa";
 
-const SocialMenu = (props) => {
+const ContactMenu = (props) => {
   return (
     <>
                  <Nav {...props}>                 
@@ -15,16 +15,16 @@ const SocialMenu = (props) => {
                     <FaTwitter/> Twitter
                     </Nav.Link>
                     <Nav.Link href={config.contact.socialMedia.linkedin} target="_blank">
-                    <FaLinkedin/> LinkedIn
+                    <FaLinkedin/> Linkedin
                     </Nav.Link>
                     <Nav.Link href={config.contact.socialMedia.instagram} target="_blank">
-                    <FaInstagram/> Instagram
+                    <FaInstagram/>
                     </Nav.Link>
                     <Nav.Link href={config.contact.socialMedia.youtube} target="_blank">
-                    <FaYoutube/> YouTube
+                    <FaYoutube/>
                     </Nav.Link>
                     <Nav.Link href={config.contact.socialMedia.github} target="_blank">
-                    <FaGithub/> GitHub
+                    <FaGithub/>
                     </Nav.Link>
                   
                     </Nav>
@@ -32,4 +32,4 @@ const SocialMenu = (props) => {
   );
 };
 
-export default SocialMenu;
+export default ContactMenu;
