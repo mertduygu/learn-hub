@@ -2,7 +2,7 @@ import React from 'react'
 import { Nav } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
-const Menu = (props) => {
+const MainMenu = (props) => {
   return (
     <>
                  <Nav {...props}>                 
@@ -23,7 +23,7 @@ const Menu = (props) => {
                     </Nav.Link>
                     </Nav>
     </>
-  )
-}
+  );
+};
 
-export default Menu
+export default MainMenu;

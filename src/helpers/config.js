@@ -7,6 +7,15 @@ export const config = {
     contact:{
         phone: '123-456-7890',
         email: 'JtRQ8@example.com',
-    }
+        socialMedia:{
+            twitter:"https://twitter.com",
+            facebook:"https://facebook.com",
+            linkedin:"https://linkedin.com",
+            instagram:"https://instagram.com",
+            youtube:"https://youtube.com",
+            github:"https://github.com",
+        }
+    },
+
     
 }

@@ -2,7 +2,8 @@ import React from "react";
 import { Col, Container, Row, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { config } from "../../helpers/config";
-import Menu from "./menu";
+import MainMenu from "./main-menu";
+import "./footer.scss";
 const Footer = () => {
   return (
     <footer>
@@ -10,15 +11,18 @@ const Footer = () => {
         <Row>
           <Col>
             <Link to="/">
-              <Image src="/images/logo/logo-white.png" alt={config.project.name} />
+              <Image
+                src="/images/logo/logo-white.png"
+                alt={config.project.name}
+              />
             </Link>
             <p>{config.project.description}</p>
           </Col>
           <Col>
-          <h3>Quick Links</h3>
-          
-            <Menu className="flex-column"/>
-        
+            <h3>Quick Links</h3>
+
+            <MainMenu className="flex-column" />
+
           </Col>
           <Col></Col>
           <Col></Col>
